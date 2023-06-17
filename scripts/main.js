@@ -11,25 +11,27 @@ let myBoolean = false;
 
 //write variables and their values to the screen and console
 let msg = '---- INF651 - Assignment 2 Output ----';
-msg += '\n\n';
+const lineBreaks = '\n\n';
+
+msg += lineBreaks;
 msg += `myNumber (typeof: ${typeof myNumber}) = ${myNumber}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `myOtherNumber (typeof: ${typeof myOtherNumber}) = ${myOtherNumber}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `myTotal (myNumber * myOtherNumber) (typeof: ${typeof myTotal})  = ${myTotal}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `myName (typeof: ${typeof myName}) = ${myName}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `myCombo (\`\${myNumber + myOtherNumber}\`) (typeof: ${typeof myCombo})  = ${myCombo}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `myOtherCombo (myNumber + myOtherNumber) (typeof: ${typeof myOtherCombo}) = ${myOtherCombo}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `myRemainder (myNumber % 5) (typeof: ${typeof myRemainder}) = ${myRemainder}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `i (not good convention to name a variable with one character) (typeof: ${typeof i}) = ${i}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `int (not good convention to name a variable similiar to integer) (typeof: ${typeof int}) = ${int}`;
-msg += '\n\n';
+msg += lineBreaks;
 msg += `myBoolean (typeof: ${typeof myBoolean}) = ${myBoolean}`;
 
 document.getElementById('dvContent').innerText = msg;
