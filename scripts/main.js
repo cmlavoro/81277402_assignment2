@@ -1,38 +1,101 @@
-let myNumber      = 5;
-let myOtherNumber = 5;
-let myTotal = myNumber * myOtherNumber;
-let myName = "";
-let myCombo = `${myNumber + myOtherNumber}`;
-let myOtherCombo = myNumber + myOtherNumber;
-let myRemainder = myNumber % 5;
-let i = 2;
-let int = 4;
-let myBoolean = false;
+const question1 = (myNumber) => {
+    let myDept;
+    /////// write your IF statement below this line ///////// 
+    if (myNumber > 1) {
+        myDept = "Informatics";
+    }
+    /////// write your IF statement above this line ///////// 
+    return myDept;
+};
 
-//write variables and their values to the screen and console
-let msg = '---- INF651 - Assignment 2 Output ----';
-const lineBreaks = '\n\n';
+const question2 = (myValue) => {
+    let myLang;
+    /////// write your IF statement below this line /////////
+    if (myValue.length == 10) {
+        myLang = "JavaScript";
+    }
+    else {
+        myLang = "Python";
+    }
+    /////// write your IF statement above this line /////////
+    return myLang;
+};
 
-msg += lineBreaks;
-msg += `myNumber (typeof: ${typeof myNumber}) = ${myNumber}`;
-msg += lineBreaks;
-msg += `myOtherNumber (typeof: ${typeof myOtherNumber}) = ${myOtherNumber}`;
-msg += lineBreaks;
-msg += `myTotal (myNumber * myOtherNumber) (typeof: ${typeof myTotal})  = ${myTotal}`;
-msg += lineBreaks;
-msg += `myName (typeof: ${typeof myName}) = ${myName}`;
-msg += lineBreaks;
-msg += `myCombo (\`\${myNumber + myOtherNumber}\`) (typeof: ${typeof myCombo})  = ${myCombo}`;
-msg += lineBreaks;
-msg += `myOtherCombo (myNumber + myOtherNumber) (typeof: ${typeof myOtherCombo}) = ${myOtherCombo}`;
-msg += lineBreaks;
-msg += `myRemainder (myNumber % 5) (typeof: ${typeof myRemainder}) = ${myRemainder}`;
-msg += lineBreaks;
-msg += `i (not good convention to name a variable with one character) (typeof: ${typeof i}) = ${i}`;
-msg += lineBreaks;
-msg += `int (not good convention to name a variable similiar to integer) (typeof: ${typeof int}) = ${int}`;
-msg += lineBreaks;
-msg += `myBoolean (typeof: ${typeof myBoolean}) = ${myBoolean}`;
+const question3 = (myValue) => {
+    let myLang;
+    /////// write your IF statement below this line /////////
+    if (myValue.length == 10) {
+        myLang = "JavaScript";
+    }
+    else if (myValue.length > 3) {
+        myLang = "PHP";
+    }
+    else {
+        myLang = "Python";
+    }
+    /////// write your IF statement above this line /////////
+    return myLang;
+};
 
-document.getElementById('dvContent').innerText = msg;
-console.log(msg);
+const question4 = (myNumber) => {
+    let myFaveFood;
+    /////// write your SWITCH statement below this line /////////
+    switch (myNumber) {
+        case 1:
+            myFaveFood = "Pizza";
+            break;
+        case 2:
+            myFaveFood = "Hamburger";
+            break;
+        case 3:
+            myFaveFood = "Ice Cream";
+            break;
+        case 4:
+            myFaveFood = "Sushi";
+            break;
+        default:
+            myFaveFood = "Pho";
+    }
+    /////// write your SWITCH statement above this line /////////
+    return myFaveFood;
+};
+
+const question5 = (myTemp) => {
+    let myWeather;
+    /////// write your TERNARY OPERATOR statement below this line /////////
+    myWeather = myTemp >= 75 ? "Great weather!" : "Still cold.";
+    /////// write your TERNARY OPERATOR statement above this line /////////
+    return myWeather;
+};
+
+
+//Unit Testing
+console.log('---------Unit Testing---------');
+console.log(`question1()--> ${question1()}`);
+console.log(`question1(0)--> ${question1(0)}`);
+console.log(`question1(1)--> ${question1(1)}`);
+console.log(`question1(2)--> ${question1(2)}`);
+console.log(`question1('test')--> ${question1('test')}`);
+console.log(`question2('length7')--> ${question2('length7')}`);
+console.log(`question2('+length8')--> ${question2('+length8')}`);
+console.log(`question2('++length9')--> ${question2('++length9')}`);
+console.log(`question2('++length10')--> ${question2('++length10')}`);
+console.log(`question3('len')--> ${question3('len')}`);
+console.log(`question3('+length8')--> ${question3('+length8')}`);
+console.log(`question3('++length10')--> ${question3('++length10')}`);
+console.log(`question3('+++length11')--> ${question3('+++length11')}`);
+console.log(`question4()--> ${question4()}`);
+console.log(`question4(0)--> ${question4(0)}`);
+console.log(`question4(1)--> ${question4(1)}`);
+console.log(`question4(2)--> ${question4(2)}`);
+console.log(`question4(3)--> ${question4(3)}`);
+console.log(`question4(4)--> ${question4(4)}`);
+console.log(`question4(5)--> ${question4(5)}`);
+console.log(`question5()--> ${question5()}`);
+console.log(`question5('test')--> ${question5('test')}`);
+console.log(`question5(-1)--> ${question5(-1)}`);
+console.log(`question5(0)--> ${question5(0)}`);
+console.log(`question5(45)--> ${question5(45)}`);
+console.log(`question5(74)--> ${question5(74)}`);
+console.log(`question5(75)--> ${question5(75)}`);
+console.log(`question5(145)--> ${question5(145)}`);
